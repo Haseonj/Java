@@ -15,7 +15,5 @@ public class _07 {
 		System.out.println(A*B);
 		System.out.println(A/B);
 		System.out.println(A%B);
-		
 	}
-
 }

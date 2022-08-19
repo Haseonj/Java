@@ -1,5 +1,14 @@
 package step01;
 
-public class _09 {
+import java.util.Scanner;
 
+public class _09 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int y = sc.nextInt();
+		
+		System.out.println(y-543);	
+	}
 }
