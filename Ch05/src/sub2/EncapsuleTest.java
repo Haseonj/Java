@@ -4,6 +4,11 @@ package sub2;
  * 날짜 : 2022/08/25
  * 이름 : 하선주
  * 내용 : Java 갭슐화 실습하기
+ * 
+ * 캡슐화(Encapsulation)
+ *  - 캡슐화는 객체의 속성을 외부에 참조하지 못하도록 객체의 정보를 은닉하는 특성
+ *  - 클래스의 속성은 반드시 private 선언을 통해 캡슐화
+ *  - 은닉된 정보의 안전한 외부 참조를 위해 getter, setter를 제공
  */
 public class EncapsuleTest {
 	public static void main(String[] args) {
