@@ -14,7 +14,7 @@ public class PolyTest {
 	public static void main(String[] args) {
 		
 		// 다형성을 적용한 객체 생성(업캐스팅)
-		Animal a1 = new Tiger();
+		Animal a1 = new Tiger(); 
 		Animal a2 = new Eagle();
 		Animal a3 = new Shark();
 		
