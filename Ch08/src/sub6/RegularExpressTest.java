@@ -63,7 +63,7 @@ public class RegularExpressTest {
 			
 		}
 		
-		// 자주 사용하는 정규표현식
+		// 자주 사용하는 정규표현식 
 		String ptt1 = "^[a-z-Z0-9]*$";
 		String ptt2 = "^[가-힣]*$";
 		String ptt3 = "(01\\d{1})-(\\d{3,4})-(\\d{4})";
@@ -78,7 +78,6 @@ public class RegularExpressTest {
 		while(mt2.find()) {
 			System.out.println(mt2.group());
 		}
-		
 		
 	}
 }
