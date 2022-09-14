@@ -12,5 +12,6 @@ public class P185StudentTest2 {
 		System.out.println(studentSon.serialNum);
 		System.out.println(studentSon.studentName + "학번 : " + studentSon.studentID);
 		
+		
 	}
 }
