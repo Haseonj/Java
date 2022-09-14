@@ -1,5 +1,7 @@
-package sub1;
+package sub2;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -8,23 +10,28 @@ import java.io.IOException;
 /*
  * 날짜 : 2022/09/13
  * 이름 : 하선주
- * 내용 : 파일 입출력 스트림 실습하기
+ * 내용 : 버퍼 입출력 스트림 실습하기
  * 
- * 입출력 스트림(Stream)
- *  - 파일(File)은 컴퓨터 저장매체(HDD)에 저장되는 데이터 묶음
- *  - 프로그램은 데이터 처리와 함께 데이터 저장을 위해 파일 입출력 수행
- *  - 파일 입출력을 위해 입출력 스트림을 사용
+ * 버퍼 스트림
+ *  - 기본 입출력 스트림에 Buffer를 장착해서 빠른 입출력을 지원하는 스트림
+ *  - 기본 입출력에 기본적으로 버퍼를 장착
  * 
  */
-public class FileIOTest {
+public class BufferIOTest {
 	public static void main(String[] args) {
 		
-		String path = "C:\\Users\\java2\\Desktop\\Sample1.txt";
-		String target = "C:\\Users\\java2\\Desktop\\Sample2.txt";
+		String path = "C:\\Users\\java2\\Desktop\\Java.pdf";
+		String target = "C:\\Users\\java2\\Desktop\\Java2.pdf";
 		
 		try {
 			FileInputStream fis = new FileInputStream(path);
 			FileOutputStream fos = new FileOutputStream(target);
+			
+			// 보조 스트림(버퍼) 연결
+			BufferedInputStream bis = new BufferedInputStream(fis);
+			BufferedOutputStream bos = new BufferedOutputStream(fos);
+			
+			
 			
 			while(true) {
 				
@@ -35,15 +42,17 @@ public class FileIOTest {
 				}
 				
 				// 데이터 출력
-				char c = (char) data; // int - char 형변환 가능
-				System.out.print(c);
+				//char c = (char) data; // int - char 형변환 가능
+				//System.out.print(c);
 				
 				// 파일 쓰기
-				fos.write(data);
+				bos.write(data);
 				
 			}
 			
 			// 스트림 해제
+			bis.close();
+			bos.close();
 			fis.close();
 			fos.close();
 			
