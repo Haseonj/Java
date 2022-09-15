@@ -1,12 +1,12 @@
 package Ch06;
 
-public class P207 {
+public class P207Book {
 	private String bookName;
 	private String author;
 	
-	public P207() {}
+	public P207Book() {}
 	
-	public P207(String bookName, String author) {
+	public P207Book(String bookName, String author) {
 		this.bookName = bookName;
 		this.author = author;
 	}
@@ -23,7 +23,7 @@ public class P207 {
 		return author;
 	}
 	
-	public void setAuthor() {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 	
