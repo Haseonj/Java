@@ -55,5 +55,4 @@ public class P234Customer {
 	public void setCustomerGrade(String customerGrade) {
 		this.customerGrade = customerGrade;
 	}
-	// P264 부터 시작
 }
