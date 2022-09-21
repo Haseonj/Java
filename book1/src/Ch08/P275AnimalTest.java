@@ -64,6 +64,14 @@ public class P275AnimalTest {
 			if(ani instanceof Human) {
 				Human h = (Human)ani;
 				h.readBook();
+			}else if(ani instanceof Tiger) {
+				Tiger t = (Tiger)ani;
+				t.hunting();
+			}else if(ani instanceof Eagle) {
+				Eagle e = (Eagle) ani;
+				e.flying();
+			}else {
+				System.out.println("지원되지 않는 형입니다.");
 			}
 			
 		}
