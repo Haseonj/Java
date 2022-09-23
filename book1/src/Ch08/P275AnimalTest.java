@@ -42,7 +42,7 @@ public class P275AnimalTest {
 	ArrayList<Animal> aniList = new ArrayList<Animal>();
 	
 	public static void main(String[] args) {
-		P275AnimalTest aTest = new P275AnimalTest();
+		Animal aTest = new Animal();
 		aTest.addAnimal();
 		System.out.println("원래 형태로 다운 캐스팅");
 		aTest.testCasting();
